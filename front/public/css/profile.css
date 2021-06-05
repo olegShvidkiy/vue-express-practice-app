@@ -1,0 +1,80 @@
+body {
+    background-image: url("/img/profile.png");
+}
+
+.stack,
+.stack::after,
+.stack::before {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+}
+
+.stack::after,
+.stack::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.stack::before{
+  left: 7px;
+  top: 5px;
+  z-index: -1;
+}
+
+.stack::after{
+  left: 12px;
+  top: 10px;
+  z-index: -2;
+  
+
+}
+
+.stack-size {
+  width: 240px;
+  height: 350px;
+}
+
+.add-stack {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+  border: none;
+  background-color: white;
+  padding: 50%;
+  border-radius: 50%;
+}
+
+.button-midle {
+  font-size: 50px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -55%);
+  transform: translate(-50%, -55%);
+}
+
+
+@media(max-width: 780px){
+  .stack-size{
+    width: 40%;
+    height: 35vh;
+  }
+
+  .add-stack {
+  margin-left: 20%;
+  border: none;
+  background-color: white;
+  padding: 30%;
+  border-radius: 50%;
+}
+}
+
+@media(max-width: 590px){
+  .stack-size{
+    width: 100%;
+    height: 60vh;
+  }
+} 
+

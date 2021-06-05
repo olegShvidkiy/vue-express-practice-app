@@ -1,0 +1,42 @@
+body {
+    background-image: url("/img/main-wave.png");
+}
+
+.wrapper {
+    height: 100%;
+    display: grid;
+    grid-gap: 20px;
+    grid-auto-rows: minmax(50px, auto);
+    grid-template-areas:
+    "0 a 1"
+    "b a c"
+    "b d c"
+    "e d f"
+    "e g f"
+    "2 g 3";
+}
+.lang1 {grid-area: a;}
+.lang2 {grid-area: b;}
+.lang3 {grid-area: c;}
+.lang4 {grid-area: d;}
+.lang5 {grid-area: e;}
+.lang6 {grid-area: f;}
+.lang7 {grid-area: g;}
+
+.lang1, .lang2, .lang3, .lang4, .lang5, .lang6, .lang7 {
+    align-items: center;
+    transition-duration: .5s;
+} 
+
+.lang1:hover, .lang2:hover, .lang3:hover, .lang4:hover, .lang5:hover, .lang6:hover, .lang7:hover {
+    transform: scale(1.05);
+    
+    box-shadow: 0 15px 15px rgb(0 0 0 / 15%);
+} 
+
+.lang{
+    position: absolute;
+    top: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}

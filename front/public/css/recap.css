@@ -1,0 +1,34 @@
+.stack,
+.stack::after,
+.stack::before {
+  box-shadow: 0 10px 10px rgb(0 0 0 / 20%);
+  height: 50vh;
+  opacity: 0;
+}
+
+.stack::after,
+.stack::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-color: inherit;
+  border-radius: inherit;
+}
+
+.stack::before {
+  left: 7px;
+  top: 5px;
+  z-index: -1;
+}
+
+.stack::after {
+  left: 12px;
+  top: 10px;
+  z-index: -2;
+}
+
+.word {
+  font-weight: bolder;
+  font-size: 50px;
+}
